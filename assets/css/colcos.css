@@ -579,3 +579,74 @@ a.btn--ghost:hover { color: var(--deep); }
 
 /* funders sit under partners, at a quieter size */
 .logos--funders a { width: clamp(150px, 16vw, 185px); border-width: 3px; }
+
+/* ==========================================================================
+   BUTTONS — single authoritative block, replacing everything above.
+   Two kinds only. Both legible on every background without hovering.
+   ========================================================================== */
+
+a.btn, a.btn:link, a.btn:visited {
+  display: inline-block; font-family: var(--mono); font-size: .75rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+  padding: .95rem 1.8rem; border: 3px solid transparent;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+
+/* solid: yellow block, deep-blue type. Identical everywhere. */
+a.btn { background: var(--acid); color: var(--deep); border-color: var(--acid); }
+a.btn:hover, a.btn:focus-visible { background: var(--deep); color: var(--acid); border-color: var(--deep); }
+
+/* outline: takes its colour from the ground it sits on */
+a.btn.btn--ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+a.btn.btn--ghost:hover, a.btn.btn--ghost:focus-visible { background: var(--ink); color: var(--acid); border-color: var(--ink); }
+
+.hero a.btn.btn--ghost,
+.section--deep a.btn.btn--ghost,
+.section--cobalt a.btn.btn--ghost,
+.pagehead a.btn.btn--ghost { color: var(--white); border-color: var(--white); }
+.hero a.btn.btn--ghost:hover,
+.section--deep a.btn.btn--ghost:hover,
+.section--cobalt a.btn.btn--ghost:hover,
+.pagehead a.btn.btn--ghost:hover { background: var(--white); color: var(--deep); border-color: var(--white); }
+
+.section--acid a.btn { background: var(--deep); color: var(--acid); border-color: var(--deep); }
+.section--acid a.btn:hover { background: transparent; color: var(--deep); border-color: var(--deep); }
+.section--acid a.btn.btn--ghost { background: transparent; color: var(--deep); border-color: var(--deep); }
+.section--acid a.btn.btn--ghost:hover { background: var(--deep); color: var(--acid); }
+
+/* ==========================================================================
+   DATA BARS — colour encodes the group, not the panel, so the three charts
+   can be read against each other. Yellow runs through all three.
+   ========================================================================== */
+
+.gap__fill, .section--deep .gap__fill { background: var(--mesh); }
+.gap__fill--strong, .section--deep .gap__fill--strong { background: var(--acid); }
+.gap__value { color: var(--deep); }
+.gap__track, .section--deep .gap__track { background: rgba(255,255,255,.14); }
+.gap__item--equal .gap__fill { background: var(--mesh); }
+.gap__item--equal .gap__fill--strong { background: var(--acid); }
+.gap__key {
+  display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 2rem;
+  font-family: var(--mono); font-size: .625rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.8);
+}
+.gap__key span { display: flex; align-items: center; gap: .5rem; }
+.gap__key i { width: 22px; height: 12px; display: block; }
+
+/* ==========================================================================
+   LOGOS — partners and funders at one size.
+   ========================================================================== */
+
+.logos a, .logos--funders a { width: 250px; border-width: 4px; }
+
+/* footer blurb: a real gap between the two lines */
+.footer__blurb { line-height: 1.35; }
+.footer__blurb br { content: ""; display: block; margin-bottom: .55rem; }
+
+/* footer blurb: two distinct lines with air between them */
+.footer__blurb br { display: none; }
+.footer__blurb { display: grid; gap: .6rem; }
+
+/* news feature: image height tied to the panel, not left to run away */
+.feature img { max-height: 380px; min-height: 240px; }
+@media (min-width: 860px) { .feature img { max-height: none; height: 100%; } .feature { max-height: 420px; } }
