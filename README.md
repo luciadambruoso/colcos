@@ -40,9 +40,8 @@ The Wix site stays live until DNS for cost-of-smoking.org is repointed.
 ## Still to come
 
 - Problem statement narrative
-- Action agenda as it appears on the live page
-- Dedication text
 - Liverpool presentation PDF (linked on the live story, not in the Wix export)
+- The forensic photograph on the Evidence Reviews card (see below)
 
 Marked in the HTML with `class="todo"` and visible on the page.
 
@@ -68,10 +67,27 @@ Marked in the HTML with `class="todo"` and visible on the page.
   "statsitics" → statistics; "this man if filling" → is filling;
   "Asthmas and Lung UK" → Asthma and Lung UK; "commerical" → commercial.
 - Slug `probelm-statement` → `problem-statement`.
+- Navigation is flat: About, Evidence, Resources, News. The "More" menu is gone;
+  sub-pages are reached from the Evidence page and the footer.
+- Action agenda content taken from the roadshow deck (slides 12 and 15).
+- Dedication text carried across from the live site.
+- News gains two entries: the Social Policy & Administration publication
+  (September 2024) and the Liverpool Hope Inequalities and Health Summit
+  (October 2024). Latest story runs as a feature.
+
+## Page banners
+
+Every page carries a banner built from the study's own photographs, converted to
+a blue duotone (`#07134B` to a light blue) so each page keeps its own image while
+staying in the site's colour. Built by `banner()` in the build script; sources in
+`assets/img/banner/`. The home hero comes from the roadshow deck.
 
 ## Substituted images
 
-Two stock photographs on the live Evidence page were not in the Wix export:
-the forensic investigator on Evidence Reviews and the sky on Action Agenda.
-Standing in: the first page of Evidence Brief 1, and the second abstract image
-from the export. Swap them in `evidence.html` when originals are available.
+The forensic photograph on the Evidence Reviews card is Wix stock and could not
+be retrieved. In its place is `assets/img/evidence/evidence-reviews.svg`, an
+evidence-tape illustration in the site palette. Drop the original in and change
+the `src` in the build script if you'd rather have the photograph.
+
+The Liverpool Hope 2024 story reuses the 2023 Liverpool photograph. A picture
+from the October 2024 summit would be better.

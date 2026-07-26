@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration: evidence tape reading Evidence, Do Not Cross">
+  <rect width="800" height="600" fill="#07134B"/>
+  <g opacity=".22" stroke="#93A8EE" stroke-width="1" fill="none">
+    <path d="M0 90h800M0 180h800M0 270h800M0 360h800M0 450h800M0 540h800"/>
+    <path d="M100 0v600M200 0v600M300 0v600M400 0v600M500 0v600M600 0v600M700 0v600"/>
+  </g>
+  <g transform="rotate(-12 400 240)">
+    <rect x="-80" y="196" width="960" height="86" fill="#FD6262"/>
+    <text x="400" y="250" text-anchor="middle" fill="#07134B"
+      font-family="IBM Plex Mono, ui-monospace, monospace" font-size="40" font-weight="600" letter-spacing="10">
+      EVIDENCE · DO NOT CROSS
+    </text>
+  </g>
+  <g transform="rotate(7 400 400)">
+    <rect x="-80" y="368" width="960" height="86" fill="#FD6262"/>
+    <text x="400" y="422" text-anchor="middle" fill="#07134B"
+      font-family="IBM Plex Mono, ui-monospace, monospace" font-size="40" font-weight="600" letter-spacing="10">
+      EVIDENCE · DO NOT CROSS
+    </text>
+  </g>
+  <text x="400" y="556" text-anchor="middle" fill="#93A8EE"
+    font-family="IBM Plex Mono, ui-monospace, monospace" font-size="19" letter-spacing="5">
+    THREE RAPID REVIEWS
+  </text>
+</svg>
