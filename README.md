@@ -74,6 +74,9 @@ Marked in the HTML with `class="todo"` and visible on the page.
 - News gains two entries: the Social Policy & Administration publication
   (September 2024) and the Liverpool Hope Inequalities and Health Summit
   (October 2024). Latest story runs as a feature.
+- Home page rewritten. The community quotation leads; the four "Our Mission"
+  blocks and the Wix platform copy are cut. That material still lives on About
+  and Resources. Restore from git history if it is wanted back.
 
 ## Page banners
 
@@ -84,10 +87,6 @@ staying in the site's colour. Built by `banner()` in the build script; sources i
 
 ## Substituted images
 
-The forensic photograph on the Evidence Reviews card is Wix stock and could not
-be retrieved. In its place is `assets/img/evidence/evidence-reviews.svg`, an
-evidence-tape illustration in the site palette. Drop the original in and change
-the `src` in the build script if you'd rather have the photograph.
 
 The Liverpool Hope 2024 story reuses the 2023 Liverpool photograph. A picture
 from the October 2024 summit would be better.
