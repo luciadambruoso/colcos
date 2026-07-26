@@ -398,3 +398,96 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.08; }
   .section { padding-block: 1rem !important; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; }
 }
+
+/* ==========================================================================
+   PRINT-SHOP TREATMENT
+   Offset registration, halftone ground, panel borders. The vocabulary is
+   stencil and cheap print — the things community campaigns are actually made
+   with — not gloss.
+   ========================================================================== */
+
+/* --- 1. every card lifts and throws a hard offset ------------------------- */
+
+.ev, .component, .agenda__item, .plate, .story, .publication, .podcast, .logos a, .feature {
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.ev:hover, .component:hover, .agenda__item:hover, .plate:hover,
+.publication:hover, .podcast:hover, .feature:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--acid);
+}
+.story:hover { transform: translate(-4px,-4px); box-shadow: 8px 8px 0 var(--acid); }
+.section--deep .ev:hover, .section--deep .component:hover,
+.section--deep .agenda__item:hover, .section--deep .publication:hover,
+.section--deep .podcast:hover, .section--cobalt .agenda__item:hover {
+  box-shadow: 8px 8px 0 var(--coral);
+}
+@media (hover: none) { .ev:hover,.component:hover,.agenda__item:hover,.plate:hover,.story:hover,.feature:hover,.publication:hover,.podcast:hover { transform:none; box-shadow:none; } }
+
+/* --- 2. halftone ground on the dark blocks -------------------------------- */
+
+.section--deep, .section--cobalt { position: relative; }
+.section--deep::before, .section--cobalt::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(245,224,61,.13) 1.4px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+.section--deep > *, .section--cobalt > * { position: relative; z-index: 1; }
+
+/* --- 3. images enlarge inside their frame --------------------------------- */
+
+.plate, .zoom, .trio figure, .ev__img { overflow: hidden; }
+.plate img, .zoom img, .trio img, .ev__img img, .story img, .feature img {
+  transition: transform .45s cubic-bezier(.2,.7,.3,1);
+}
+.plate:hover img, .zoom:hover img, .trio figure:hover img,
+.ev:hover .ev__img img, .story:hover img, .feature:hover img { transform: scale(1.07); }
+@media (prefers-reduced-motion: reduce) { .plate:hover img,.zoom:hover img,.trio figure:hover img,.ev:hover .ev__img img,.story:hover img,.feature:hover img { transform:none; } }
+
+.zoom { margin: 0; border: 4px solid var(--ink); }
+.zoom figcaption, .trio figcaption {
+  font-family: var(--mono); font-size: .625rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--coral-ink); padding: .8rem 1rem; background: var(--white);
+  border-top: 4px solid var(--ink); margin: 0;
+}
+.trio figcaption { border-top: 0; background: transparent; padding: .7rem 0 0; }
+.section--deep .zoom, .section--cobalt .zoom { border-color: var(--acid); }
+.section--deep .zoom figcaption, .section--cobalt .zoom figcaption { background: var(--acid); color: var(--deep); border-top-color: var(--acid); }
+
+/* --- 4. portraits in colour ----------------------------------------------- */
+
+.team img { filter: none; }
+.team figure { transition: transform .16s ease; }
+.team figure:hover { transform: translate(-3px,-3px); }
+.team figure:hover img { box-shadow: 6px 6px 0 var(--acid); }
+
+/* --- 5. partner logos as proper buttons ----------------------------------- */
+
+.logos { gap: 1.25rem; }
+.logos a {
+  width: clamp(200px, 22vw, 250px); border-width: 4px; position: relative;
+}
+.logos a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px;
+  background: var(--acid); transform: scaleX(0); transform-origin: left;
+  transition: transform .2s ease;
+}
+.logos a:hover { transform: translate(-4px,-4px); box-shadow: 8px 8px 0 var(--acid); border-color: var(--ink); }
+.logos a:hover::after { transform: scaleX(1); }
+.section--deep .logos a, .section--cobalt .logos a { border-color: var(--acid); }
+.section--deep .logos a:hover, .section--cobalt .logos a:hover { box-shadow: 8px 8px 0 var(--coral); }
+
+/* --- 6. stencil rule under section eyebrows ------------------------------- */
+
+.stamp { position: relative; display: inline-block; padding-bottom: .35rem; }
+.stamp::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px;
+  background: repeating-linear-gradient(90deg, currentColor 0 9px, transparent 9px 14px);
+  opacity: .55;
+}
+.pagehead .stamp::after, .hero__meta::after { opacity: .7; }
+
+/* --- 7. component marks sit in a panel ------------------------------------ */
+
+.component__mark { width: 56px; height: 56px; }
+.component__head { align-items: center; }
