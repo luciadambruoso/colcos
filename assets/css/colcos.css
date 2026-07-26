@@ -420,3 +420,157 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 300; line-height: 1.16;
   .section { padding-block: 1rem !important; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555 !important; }
 }
+
+/* ==========================================================================
+   LIGHT INTERIORS
+   Cobalt is kept for the chrome — hero, page banners, footer — and for one
+   emphasis band per page. Everything you actually read sits on paper, so the
+   pages are legible on screen and sane on paper.
+   ========================================================================== */
+
+:root {
+  --paper:     #F4F5FA;
+  --paper-alt: #FFFFFF;
+  --tint:      #E8EBF6;
+  --ink:       #101A3D;
+  --ink-soft:  #414B70;
+  --ink-faint: #6B7492;
+  --hair-ink:  #D2D8EA;
+  --blue-mid-light: #E8EBF6;
+}
+
+body { background: var(--paper); color: var(--ink); }
+
+h1, h2, h3, h4 { color: var(--ink); }
+.lede, .dim, .prose p, .prose ul li, .col p, .gap__item > p { color: var(--ink-soft); }
+.stamp { color: #4A63B8; }
+a { color: #C4453F; }
+a:hover { color: var(--coral); }
+
+/* chrome stays cobalt */
+.masthead { background: var(--blue); border-bottom: 0; }
+.masthead .brand span { color: var(--white); }
+.masthead .nav > a { color: rgba(255,255,255,.78); }
+.masthead .nav > a:hover { color: var(--coral); }
+.masthead .nav > a[aria-current="page"] { color: var(--coral); border-bottom-color: var(--coral); }
+
+.hero, .pagehead, .footer { color: var(--white); }
+.hero h1, .pagehead h1, .footer h2 { color: var(--white); }
+.hero p, .pagehead p { color: rgba(255,255,255,.84); }
+.footer a { color: var(--mesh); }
+
+/* one dark band is still allowed; everything else is paper or tint */
+.section--deep { background: var(--blue-deep); }
+.section--deep h2, .section--deep h3, .section--deep .plate__title { color: var(--white); }
+.section--deep .lede, .section--deep p, .section--deep .dim { color: rgba(255,255,255,.78); }
+.section--deep .stamp { color: var(--mesh); }
+.section--deep a { color: var(--mesh); }
+
+.section--mid, .section--tint { background: var(--tint); }
+.section--mid::before, .section--tint::before { display: none; }
+.section--mid h2, .section--mid h3 { color: var(--ink); }
+.section--mid .lede, .section--mid p, .section--mid .dim { color: var(--ink-soft); }
+.section--mid .stamp, .section--tint .stamp { color: #4A63B8; }
+.section--light { background: var(--paper-alt); }
+
+.rule { background: linear-gradient(90deg, var(--coral) 0 88px, var(--hair-ink) 88px 100%); }
+.section--deep .rule { background: linear-gradient(90deg, var(--coral) 0 88px, var(--hair) 88px 100%); }
+
+/* cards: same arrangement, paper surfaces */
+.ev__panel { background: var(--paper-alt); border-top: 3px solid var(--coral); box-shadow: 0 10px 30px rgba(16,26,61,.10); }
+.ev__panel h3 { color: var(--ink); }
+.ev__quote { color: #4A63B8; }
+.ev__panel p { color: var(--ink-soft); }
+.ev__links a { color: #C4453F; }
+
+.agenda__item { background: var(--paper-alt); box-shadow: 0 8px 24px rgba(16,26,61,.08); }
+.agenda__item h3 { color: var(--ink); }
+.agenda__item p { color: var(--ink-soft); }
+.agenda__no { color: #4A63B8; }
+.section--deep .agenda__item { background: rgba(255,255,255,.05); box-shadow: none; }
+.section--deep .agenda__item h3 { color: var(--white); }
+.section--deep .agenda__item p { color: rgba(255,255,255,.78); }
+
+.plate figcaption { background: var(--paper-alt); box-shadow: 0 8px 24px rgba(16,26,61,.07); }
+.plate__title { color: var(--ink); }
+.plate__caption { color: var(--ink-soft); }
+.plate img { background: var(--tint); }
+
+.story { background: var(--paper-alt); box-shadow: 0 8px 24px rgba(16,26,61,.08); }
+.story__body h3 { color: var(--ink); }
+.story__date { color: #4A63B8; }
+.feature { background: var(--paper-alt); box-shadow: 0 12px 34px rgba(16,26,61,.10); }
+.feature__body h3 { color: var(--ink); }
+.feature__body p { color: var(--ink-soft); }
+
+.publication, .podcast { background: var(--paper-alt); border-top: 3px solid var(--coral); box-shadow: 0 10px 30px rgba(16,26,61,.09); }
+.publication h3, .podcast h3 { color: var(--ink); }
+.publication .authors, .publication .journal, .publication p, .podcast p { color: var(--ink-soft); }
+.section--deep .publication, .section--deep .podcast { background: rgba(255,255,255,.05); box-shadow: none; }
+.section--deep .publication h3, .section--deep .podcast h3 { color: var(--white); }
+.section--deep .publication .authors, .section--deep .publication .journal,
+.section--deep .publication p, .section--deep .podcast p { color: rgba(255,255,255,.78); }
+
+.episodes li { border-top-color: var(--hair-ink); }
+.episodes .no { color: #4A63B8; }
+.episodes .who { color: var(--ink); }
+.section--mid .episodes li { border-top-color: #CBD3E9; }
+
+.quote { border-left-color: var(--coral); }
+.quote p { color: var(--ink); }
+.quote cite { color: #4A63B8; }
+.section--deep .quote p { color: var(--white); }
+.section--deep .quote cite { color: var(--mesh); }
+
+.hero .provenance { border-left-color: var(--mesh); color: var(--mesh); }
+.provenance { border-left-color: #4A63B8; color: #4A63B8; }
+.section--deep .provenance { border-left-color: var(--mesh); color: var(--mesh); }
+
+.prose ul li::before { background: var(--coral); }
+.team__disc { color: var(--ink-soft); }
+.team__name { color: var(--ink); }
+.section--mid .team__name { color: var(--ink); }
+
+.split figure img { border-color: var(--hair-ink); }
+.split figcaption { color: #4A63B8; }
+.trio figure { box-shadow: 0 8px 24px rgba(16,26,61,.08); }
+.trio figcaption { color: #4A63B8; }
+.logos a { box-shadow: 0 6px 18px rgba(16,26,61,.08); }
+
+.dedication p:first-child { color: var(--ink); }
+.dedication p + p { color: var(--ink-soft); }
+
+.article p, .article ul li { color: var(--ink-soft); }
+.article figure img { border: 1px solid var(--hair-ink); }
+
+.btn { background: var(--coral); color: var(--white); border-color: var(--coral); }
+.btn:hover { background: #C4453F; border-color: #C4453F; color: var(--white); }
+.btn--ghost { background: transparent; color: var(--blue); border-color: #A9B4D8; }
+.btn--ghost:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
+.section--deep .btn--ghost, .hero .btn--ghost { color: var(--mesh); border-color: var(--mesh-dim, #4A63B8); }
+.section--deep .btn--ghost:hover, .hero .btn--ghost:hover { background: var(--mesh); color: var(--blue-deep); }
+
+.col a.more-link, .ev__links a, .story__body a, .feature__body a.read { border-bottom-color: var(--coral); }
+
+.todo { border-color: #C4453F; background: #FCEDED; color: #7A2A2A; }
+.todo strong { color: #C4453F; }
+.section--deep .todo { border-color: var(--coral); background: rgba(253,98,98,.10); color: #FFD6D6; }
+.section--deep .todo strong { color: var(--coral-soft); }
+
+.verdict { background: var(--blue-deep); }
+.verdict p { color: rgba(255,255,255,.82); }
+
+.gap__track { background: #DCE1F2; }
+.section--deep .gap__track { background: rgba(147,168,238,.16); }
+.gap__verdict { color: var(--ink-soft); }
+.section--deep .gap__verdict { color: rgba(255,255,255,.78); }
+.section--deep .gap__item--equal .gap__verdict { color: var(--white); }
+
+/* --- contrast corrections ------------------------------------------------- */
+
+.btn { background: var(--coral); color: var(--blue-deep); border-color: var(--coral); font-weight: 600; }
+.btn:hover { background: var(--blue-deep); color: var(--white); border-color: var(--blue-deep); }
+
+.masthead .nav > a:hover { color: #FF9C9C; }
+.masthead .nav > a[aria-current="page"] { color: var(--white); border-bottom-color: var(--coral); }
+.footer a:hover { color: #FF9C9C; }
