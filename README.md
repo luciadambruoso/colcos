@@ -1,52 +1,56 @@
 # COLCOS — Cost of Living / Cost of Smoking
 
-Static rebuild of cost-of-smoking.org. Plain HTML and CSS. No framework, no build step,
-no JavaScript, no third-party requests (fonts are self-hosted).
+Static rebuild of cost-of-smoking.org, staying close to the original site.
+Plain HTML and CSS. No framework, no build step, no JavaScript, no third-party requests.
 
-## Structure
+## Pages
 
 ```
 index.html                 Home
-about.html                 About, research question, objectives, team, partners
-evidence.html              The six forms of evidence (index)
-  problem-statement.html     01  Problem tree
-  stakeholder-analysis.html  03  Stakeholder analysis
-  photovoice.html            05  Photovoice plates
-  action-agenda.html         06  Action agenda
-resources.html             Reports, briefs, slides, publication
-news.html                  News and events
+about.html                 About Us, Partners, Research Question, Our Team
+evidence.html              Data and Dialogue — the six evidence cards
+resources.html             Our Services, Publication, Downloads
+news.html                  News
+problem-statement.html     Problem Statement
+stakeholder-analysis.html  Stakeholder Analysis
+photovoice.html            Visual Evidence (Photovoice)
+action-agenda.html         Action Agenda
 dedication.html            Dedication
-assets/css/colcos.css      The whole stylesheet
-assets/fonts/              Newsreader, IBM Plex Sans, IBM Plex Mono (woff2)
-assets/img/                site, team, partners, evidence, photovoice
-assets/files/              PDFs
 ```
+
+Sub-pages sit under the "More" menu in the navigation, as on the original.
 
 ## Publishing
 
 Settings → Pages → Deploy from a branch → `main` / root.
-The `.nojekyll` file is required; leave it in place.
+Keep the `.nojekyll` file. The Wix site stays live until the DNS for
+cost-of-smoking.org is repointed.
 
-The Wix site stays live until the DNS for cost-of-smoking.org is repointed.
-
-## Still to add
+## Still to come
 
 - Problem statement narrative
-- Photovoice captions (18 plates) and confirmation of the plate titles
-- Action agenda content
+- Photovoice captions (18 plates) and confirmation of plate titles
+- Action agenda as it appears on the live page
 - News entries
 - Dedication text
-- Full author list for the Social Policy & Administration paper
+- Whether Wendy Innocent should have a team profile
 
-Placeholders for these are marked in the HTML with `class="todo"` and are visible on the
-page, so nothing can be published by accident without being noticed.
+These are marked in the HTML with `class="todo"` and are visible on the page,
+so nothing gets published half-finished without being noticed.
 
-## Corrections applied to the original copy
+## Changes from the live site
 
-- "cesation" → cessation
-- "amke informed decions" → make informed decisions
-- "adminsitrative" → administrative
-- "socailly" → socially
-- "build power community in public health" → build community power in public health
-- page slug `probelm-statement` → `problem-statement`
-- Copyright line no longer fixed to 2023
+- Added the published paper (Social Policy & Administration, 2024) to the home
+  page and Resources, with links to the DOI and the open access version on AURA.
+- Added a Downloads section on Resources for the PDFs already hosted on Evidence.
+- Corrected: "cesation" → cessation; "amke informed decions" → make informed
+  decisions; "adminsitrative" → administrative; "socailly" → socially;
+  "build power community" → build community power.
+- Page slug `probelm-statement` → `problem-statement`.
+- Copyright line no longer fixed to 2023.
+
+## Fonts
+
+Open Sans, self-hosted in `assets/fonts/`. If the Wix site used a different
+typeface, change the `--sans` variable at the top of `assets/css/colcos.css`
+and swap the font files — nothing else needs to change.
