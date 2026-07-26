@@ -191,10 +191,21 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 300; line-height: 1.16;
 
 /* --- partners ------------------------------------------------------------- */
 
-.logos { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
-.logos a { display: grid; place-items: center; width: 168px; height: 96px; padding: 1rem; background: var(--white); border: 1px solid var(--white); }
-.logos a:hover { border-color: var(--coral); }
-.logos img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.logos { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.5rem; }
+.logos a { display: block; width: 170px; background: var(--white); outline: 1px solid transparent; transition: outline-color .2s ease; }
+.logos a:hover { outline-color: var(--coral); }
+.logos img { width: 100%; height: auto; }
+
+/* --- podcast -------------------------------------------------------------- */
+
+.podcast { background: var(--blue-deep); border-top: 3px solid var(--coral); padding: 2.25rem; max-width: 52rem; }
+.podcast h3 { font-size: 1.4rem; margin-bottom: .9rem; }
+.podcast p { color: var(--dim); margin: 0 0 1.1rem; }
+.episodes { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .1rem; }
+.episodes li { border-top: 1px solid var(--hair); padding: .7rem 0; display: flex; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+.episodes .no { font-family: var(--mono); font-size: .625rem; letter-spacing: .12em; color: var(--mesh); min-width: 3.5rem; }
+.episodes .who { font-family: var(--serif); font-size: 1.0625rem; margin-right: auto; }
+.episodes a { font-family: var(--mono); font-size: .625rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--coral); padding-bottom: 2px; }
 
 /* --- photovoice ----------------------------------------------------------- */
 

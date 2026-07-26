@@ -42,12 +42,19 @@ The Wix site stays live until DNS for cost-of-smoking.org is repointed.
 - Problem statement narrative
 - Action agenda as it appears on the live page
 - Dedication text
-- Whether Wendy Innocent should have a team profile
 - Liverpool presentation PDF (linked on the live story, not in the Wix export)
 
 Marked in the HTML with `class="todo"` and visible on the page.
 
 ## Changes from the live site
+
+- Partner logos appear on About only, as on the live site, and each is now
+  normalised onto an identical 340x190 white canvas so they reproduce at a
+  consistent optical size. Sources in `assets/img/partners/`.
+- Funder logos are not shown; funders are credited in the footer text, as on
+  the live site. The normalised files exist if you want a row added back.
+- Added the Recovery Stories podcast series to Resources, cross-linked from
+  Stakeholder Analysis where the peer support gap is named.
 
 - "Coming Soon" removed from the three home page blocks; the descriptions stand alone.
 - "Our Services" removed from Resources, replaced with an assessment of the six
