@@ -39,9 +39,12 @@ The Wix site stays live until DNS for cost-of-smoking.org is repointed.
 
 ## Still to come
 
-- Problem statement narrative
+- The Recovery Stories photograph ('Medication, Recovery and Me', Westhill,
+  December 2022, credit Di Mitchell) — could not be downloaded from the
+  University site
 - Liverpool presentation PDF (linked on the live story, not in the Wix export)
-- The forensic photograph on the Evidence Reviews card (see below)
+- Confirmation of the December 2024 NHS Grampian story: date, event name and a
+  photograph from that meeting rather than the 2023 one currently used
 
 Marked in the HTML with `class="todo"` and visible on the page.
 
@@ -94,6 +97,13 @@ Every page carries a banner built from the study's own photographs, converted to
 a blue duotone (`#07134B` to a light blue) so each page keeps its own image while
 staying in the site's colour. Built by `banner()` in the build script; sources in
 `assets/img/banner/`. The home hero comes from the roadshow deck.
+
+## Interaction
+
+Every card — evidence, components, agenda, photovoice, news, publication,
+partner logos — lifts 4px and throws a hard yellow offset on hover, and its
+image scales slightly inside its frame. Disabled on touch devices and under
+`prefers-reduced-motion`.
 
 ## Substituted images
 
