@@ -13,7 +13,7 @@
 <body>
 <header class="masthead">
   <div class="masthead__inner">
-    <a class="brand" href="index.html"><svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true"><path d="M2 6c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/><path d="M2 13c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/><path d="M2 20c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/></svg><span>Cost of Living<br>Cost of Smoking</span></a>
+    <a class="brand" href="index.html"><span>Cost of Living<br>Cost of Smoking</span></a>
     <nav class="nav" aria-label="Main">
       <a href="about.html">About</a>
       <a href="evidence.html">Evidence</a>
@@ -31,34 +31,103 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section--light">
   <div class="wrap">
     <div class="section-head">
       <p class="stamp">Assessment</p>
       <h2>The components of the approach</h2>
     </div>
-    <div class="prose prose--wide">
-      <p>Cooperative action learning is often described as a philosophy. It is more useful to treat it as an assembly of separable components, each of which does a specific job and carries a specific cost. Anyone considering adopting the approach is really deciding which of these six they can resource.</p>
+    <p class="lede" style="max-width:46rem">Cooperative action learning is often described as a philosophy. It is more useful to treat it as an assembly of separable parts, each doing a specific job at a specific cost. Anyone considering adopting it is really deciding which six things they can resource.</p>
 
-      <h3>1. Convening</h3>
-      <p>Nine community members in under-served areas of rural Aberdeenshire took part as co-researchers rather than as subjects, recruited through Turning Point Scotland. <strong>What it does:</strong> it settles the agenda before the researchers arrive, so the topics analysed are the ones the community named. <strong>What it costs:</strong> it cannot be done cold. It depends entirely on an organisation with existing standing in the community, and that relationship takes years rather than months to build. This is the component most often skipped and least often substitutable.</p>
+    <div class="components">
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><g fill="none" stroke="#4A63B8" stroke-width="1.3"><path d="M4 8h14M4 23h10M4 38h14"/></g><circle cx="34" cy="23" r="6" fill="#FD6262"/><g stroke="#4A63B8" stroke-width="1.3" fill="none"><path d="M18 8q10 2 12 12M14 23h14M18 38q10-2 12-12"/></g></svg>
+          <div>
+            <p class="component__no">Component 01</p>
+            <h3>Convening</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>Nine community members in under-served areas of rural Aberdeenshire took part as co-researchers rather than as subjects, recruited through Turning Point Scotland.</p>
+          <div class="component__does"><b>What it does</b><p>It settles the agenda before the researchers arrive, so the topics analysed are the ones the community named.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>It cannot be done cold. It depends entirely on an organisation with existing standing in the community, and that relationship takes years rather than months to build. This is the component most often skipped and least often substitutable.</p></div>
+        </div>
+      </article>
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><g fill="#4A63B8"><circle cx="9" cy="10" r="2.6"/><circle cx="23" cy="6" r="2.6"/><circle cx="37" cy="12" r="2.6"/><circle cx="14" cy="24" r="2.6"/><circle cx="31" cy="26" r="2.6"/></g><circle cx="23" cy="40" r="5" fill="#FD6262"/><g stroke="#4A63B8" stroke-width="1.2" fill="none"><path d="M9 10 23 40M23 6 23 40M37 12 23 40M14 24 23 40M31 26 23 40"/></g></svg>
+          <div>
+            <p class="component__no">Component 02</p>
+            <h3>Community-generated evidence</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>Problem trees, stakeholder mapping and photovoice, produced and captioned by community researchers.</p>
+          <div class="component__does"><b>What it does</b><p>It produces categories the routine data has no field for &mdash; smoking as a response to financial stress, the normalisation of vaping, services that exist on paper but are inaccessible in practice.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>Nine people is not a sample and was never meant to be one. The claim these methods make is to validity, not to generalisability, and that distinction has to be held clearly or the work is easy to dismiss.</p></div>
+        </div>
+      </article>
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><rect x="5" y="26" width="7" height="15" fill="#4A63B8"/><rect x="16" y="17" width="7" height="24" fill="#4A63B8"/><rect x="27" y="30" width="7" height="11" fill="#FD6262"/><rect x="38" y="30" width="4" height="11" fill="#FD6262"/><path d="M4 9h38" stroke="#4A63B8" stroke-width="1.2"/></svg>
+          <div>
+            <p class="component__no">Component 03</p>
+            <h3>A statistical counterpart</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>Secondary analysis of the Scottish Health Survey and national cessation data, set alongside what the community produced.</p>
+          <div class="component__does"><b>What it does</b><p>It is the component that stops participatory evidence being read as anecdote. It also produced the study&rsquo;s sharpest finding &mdash; that quit attempts succeed at broadly similar rates across deprivation quintiles, while far fewer people in the most deprived quintile make one.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>It needs a data scientist on the team from the start, not brought in at the end to validate.</p></div>
+        </div>
+      </article>
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><circle cx="20" cy="19" r="13" fill="none" stroke="#4A63B8" stroke-width="1.6"/><path d="M30 29 41 40" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/><path d="M16 15q0-5 4.5-5T25 15q0 3.5-4.5 5v2.5" fill="none" stroke="#4A63B8" stroke-width="1.6"/><circle cx="20.5" cy="26" r="1.5" fill="#FD6262"/></svg>
+          <div>
+            <p class="component__no">Component 04</p>
+            <h3>Rapid reviews on community-set questions</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>Three briefs: on hypnosis, on e-cigarettes, and on how to talk about poverty.</p>
+          <div class="component__does"><b>What it does</b><p>It inverts who sets the review question. The community asked about hypnosis; the researchers would not have.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>Very little, which is why this is the most portable component of the whole approach. Any team with library access could run it next month.</p></div>
+        </div>
+      </article>
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><circle cx="17" cy="23" r="11" fill="none" stroke="#4A63B8" stroke-width="1.5"/><circle cx="29" cy="23" r="11" fill="none" stroke="#FD6262" stroke-width="1.5"/><path d="M23 13.5a11 11 0 0 0 0 19 11 11 0 0 0 0-19Z" fill="#FD6262" opacity=".35"/></svg>
+          <div>
+            <p class="component__no">Component 05</p>
+            <h3>Joint analysis in learning spaces</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>Three further workshops in which service users and providers interpreted the same evidence together.</p>
+          <div class="component__does"><b>What it does</b><p>This is where the approach either works or does not. Analysis done jointly produces conclusions both parties are committed to; analysis done separately produces a report.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>It requires officials with the authority to change something to actually attend, repeatedly. That is a scheduling problem in appearance and a power problem in substance, and it is the component most likely to fail quietly.</p></div>
+        </div>
+      </article>
+      <article class="component">
+        <div class="component__head">
+          <svg class="component__mark" viewBox="0 0 46 46" aria-hidden="true"><g stroke="#4A63B8" stroke-width="1.4" fill="none"><path d="M4 34h10M18 34h10"/></g><circle cx="14" cy="34" r="3" fill="#4A63B8"/><circle cx="28" cy="34" r="3" fill="#4A63B8"/><path d="M32 34h6" stroke="#FD6262" stroke-width="1.6"/><path d="M34 12l8 8-8 8" fill="none" stroke="#FD6262" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 20q14-10 34 0" fill="none" stroke="#4A63B8" stroke-width="1.2" stroke-dasharray="3 3"/></svg>
+          <div>
+            <p class="component__no">Component 06</p>
+            <h3>An action agenda, and returning to it</h3>
+          </div>
+        </div>
+        <div class="component__body">
+          <p>A shared agenda agreed with the health authority, followed in February 2024 by a return visit to review what had changed.</p>
+          <div class="component__does"><b>What it does</b><p>The agenda converts the preceding five components into something a health authority can act on. The return visit is what distinguishes participation from consultation &mdash; community partners saw their own intelligence in NHS Grampian&rsquo;s new campaigns and said so.</p></div>
+          <div class="component__costs"><b>What it costs</b><p>The return visit is unfunded in most study designs, and is almost always the first thing dropped.</p></div>
+        </div>
+      </article>
+    </div>
 
-      <h3>2. Community-generated evidence</h3>
-      <p>Problem trees, stakeholder mapping and photovoice, produced and captioned by community researchers. <strong>What it does:</strong> it produces categories the routine data has no field for &mdash; smoking as a response to financial stress, the normalisation of vaping, services that exist on paper but are inaccessible in practice. <strong>What it costs:</strong> nine people is not a sample and was never meant to be one. The claim these methods make is to validity, not to generalisability, and that distinction has to be held clearly or the work is easy to dismiss.</p>
-
-      <h3>3. A statistical counterpart</h3>
-      <p>Secondary analysis of the Scottish Health Survey and national cessation data, set alongside what the community produced. <strong>What it does:</strong> it is the component that stops participatory evidence being read as anecdote. It also produced the study&rsquo;s sharpest finding &mdash; that quit attempts succeed at broadly similar rates across deprivation quintiles, while far fewer people in the most deprived quintile make one. That reframes the problem from motivation to access. <strong>What it costs:</strong> it needs a data scientist on the team from the start, not brought in at the end to validate.</p>
-
-      <h3>4. Rapid reviews on community-set questions</h3>
-      <p>Three briefs, on hypnosis, on e-cigarettes, and on how to talk about poverty. <strong>What it does:</strong> it inverts who sets the review question. The community asked about hypnosis; the researchers would not have. <strong>What it costs:</strong> very little, which is why this is the most portable component of the whole approach. Any team with library access could run it next month.</p>
-
-      <h3>5. Joint analysis in learning spaces</h3>
-      <p>Three further workshops in which service users and providers interpreted the same evidence together. <strong>What it does:</strong> this is where the approach either works or does not. Analysis done jointly produces conclusions both parties are committed to; analysis done separately produces a report. <strong>What it costs:</strong> it requires officials with the authority to change something to actually attend, repeatedly. That is a scheduling problem in appearance and a power problem in substance, and it is the component most likely to fail quietly.</p>
-
-      <h3>6. An action agenda, and returning to it</h3>
-      <p>A shared agenda agreed with the health authority, followed in February 2024 by a return visit to review what had changed. <strong>What it does:</strong> the agenda converts the preceding five components into something a health authority can act on. The return visit is what distinguishes participation from consultation &mdash; community partners saw their own intelligence in NHS Grampian&rsquo;s new campaigns and said so. <strong>What it costs:</strong> the return visit is unfunded in most study designs, and is almost always the first thing dropped.</p>
-
-      <p>The honest summary is that components 4 and 2 are cheap and transferable, component 3 is a staffing decision, and components 1, 5 and 6 are the difficult ones &mdash; they depend on relationships and on institutional willingness rather than on method. A team adopting this approach without them would be running the technique without the conditions that make it work.</p>
+    <div class="verdict">
+      <p>Components 4 and 2 are cheap and transferable. Component 3 is a staffing decision. Components 1, 5 and 6 are the difficult ones &mdash; they depend on relationships and on institutional willingness rather than on method. A team adopting this approach without them would be running the technique without the conditions that make it work.</p>
     </div>
     <div class="todo"><strong>Still to come</strong>This assessment is written for the site rather than taken from the study documents. Worth a read-through before it goes live, and it may need clearing with the partnership.</div>
   </div>
@@ -83,37 +152,11 @@
   </div>
 </section>
 
-<section class="section" id="podcast">
+<section class="section">
   <div class="wrap">
-    <div class="section-head">
-      <p class="stamp">Podcast</p>
-      <h2>Recovery Stories</h2>
-    </div>
-      <div class="podcast">
-        <h3>Recovery Stories: peer support for connection and compassion enabling recovery from alcohol and drugs</h3>
-        <p>A four-part podcast series sharing community empowerment experiences from peer supporters working with Turning Point Scotland in Aberdeenshire, helping communities dealing with alcohol and drug problems. Practitioners and peer support workers describe how they have used their own experience to support recovery from addiction through connection and compassion.</p>
-        <p>Peer support is the process of giving and receiving non-professional, non-clinical assistance from people with similar conditions or circumstances. It matters here because when community partners in this study mapped who was available to help them stop smoking, peer support groups were one of the things they marked as missing. The series is what that gap sounds like when it is filled.</p>
-        <p>Hosted by Lucia D&rsquo;Ambruoso, Aberdeen Centre for Health Data Science, University of Aberdeen.</p>
-        <ul class="episodes">
-          <li><span class="no">Ep 1</span><span class="who">Ashley&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Ashley_TC_corrected.pdf">Transcript</a></li>
-          <li><span class="no">Ep 2</span><span class="who">Kathleen&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Kathleen_TC_corrected.pdf">Transcript</a></li>
-          <li><span class="no">Ep 3</span><span class="who">Amanda&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Amanda_TC_corrected.pdf">Transcript</a></li>
-          <li><span class="no">Ep 4</span><span class="who">Di&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Di_TC_corrected.pdf">Transcript</a></li>
-        </ul>
-        <div class="btn-row">
-          <a class="btn" href="https://www.abdn.ac.uk/news/podcasts/recovery-stories/">Listen to the series</a>
-          <a class="btn btn--ghost" href="https://open.spotify.com/show/1kqWVhwCa2tSUJ2kxK8r57">Spotify</a>
-        </div>
-      </div>
-  </div>
-</section>
-
-<section class="section section--mid">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="stamp">Downloads</p>
-      <h2>Reports and briefs</h2>
-    </div>
+    <div class="rule"></div>
+    <p class="stamp">Downloads</p>
+    <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem);margin:.6rem 0 0">Reports and briefs</h2>
     <div class="cols cols--3">
       <div class="col">
         <h3>Statistical analysis</h3>
@@ -148,20 +191,76 @@
     </div>
   </div>
 </section>
+
+<section class="section section--mid" id="podcast">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="rule"></div>
+        <p class="stamp">Podcast</p>
+        <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem);margin:.6rem 0 1.2rem">Recovery Stories</h2>
+        <p class="dim">The participatory research in this study was grounded in recovery spaces &mdash; peer support groups for alcohol, drugs and addiction run by Turning Point Scotland in Aberdeenshire. Those rooms were where the work could happen at all: places where people already had practice at being honest with each other, and where trust did not have to be built from nothing.</p>
+        <p class="dim">So peer support is not a footnote to this study. It is the condition that made the method possible, which is why we documented it in its own right. It is also what community partners marked as missing when they mapped who was available to help them stop smoking &mdash; peer support for smoking did not exist in the way it existed for addiction.</p>
+        <p class="dim">Four episodes, in which practitioners and peer support workers describe using their own experience to support recovery through connection and compassion. Hosted by Lucia D&rsquo;Ambruoso, Aberdeen Centre for Health Data Science.</p>
+        <ul class="episodes">
+          <li><span class="no">Ep 1</span><span class="who">Ashley&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Ashley_TC_corrected.pdf">Transcript</a></li>
+          <li><span class="no">Ep 2</span><span class="who">Kathleen&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Kathleen_TC_corrected.pdf">Transcript</a></li>
+          <li><span class="no">Ep 3</span><span class="who">Amanda&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Amanda_TC_corrected.pdf">Transcript</a></li>
+          <li><span class="no">Ep 4</span><span class="who">Di&rsquo;s story</span><a href="https://www.abdn.ac.uk/media/site/events/documents/TPS_Di_TC_corrected.pdf">Transcript</a></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn" href="https://www.abdn.ac.uk/news/podcasts/recovery-stories/">Listen to the series</a>
+          <a class="btn btn--ghost" href="https://open.spotify.com/show/1kqWVhwCa2tSUJ2kxK8r57">Spotify</a>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/img/site/recovery-stories.png" alt="Recovery Stories podcast">
+        <figcaption>Recovery Stories &middot; University of Aberdeen &middot; with Turning Point Scotland</figcaption>
+      </figure>
+    </div>
+    <div class="todo"><strong>Still to come</strong>The photograph on the Recovery Stories page (&lsquo;Medication, Recovery and Me&rsquo;, Westhill, December 2022, credit Di Mitchell) could not be downloaded from the University site. Send the file and it will replace the placeholder panel.</div>
+  </div>
+</section>
 </main>
 <footer class="footer">
   <div class="wrap">
-    <a class="brand" href="index.html"><svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true"><path d="M2 6c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/><path d="M2 13c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/><path d="M2 20c6-5 10 5 15 0s8-4 15 0" fill="none" stroke="#FD6262" stroke-width="3" stroke-linecap="round"/></svg><span>Cost of Living<br>Cost of Smoking</span></a>
-    <ul class="footer__links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="evidence.html">Evidence</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="dedication.html">Dedication</a></li>
-    </ul>
-    <div class="footer__legal">
-      <p>Cost of Living/Cost of Smoking: participatory research on smoking in deprived communities within the cost-of-living crisis. This study is organised by the University of Aberdeen in partnership with Action on Smoking and Health (ASH) Scotland, NHS Grampian, and Turning Point Scotland (TPS). It is funded by ASH Scotland, the British Heart Foundation (BHF) and Cancer Research UK (CRUK). Study ID Code School Ethics Review Board Reference (SERB): 652990</p>
-      <p>&copy; University of Aberdeen. All rights reserved.</p>
+    <div class="footer__grid">
+      <div>
+        <h2>Cost of Living / Cost of Smoking</h2>
+        <p class="footer__blurb">Community intelligence for public health. Rural north-east Scotland, 2023&ndash;2024.</p>
+      </div>
+      <div>
+        <h2>The study</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="evidence.html">Evidence</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="dedication.html">Dedication</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Evidence</h2>
+        <ul>
+          <li><a href="problem-statement.html">Problem statement</a></li>
+          <li><a href="stakeholder-analysis.html">Stakeholder analysis</a></li>
+          <li><a href="photovoice.html">Visual evidence</a></li>
+          <li><a href="action-agenda.html">Action agenda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Partners</h2>
+        <ul>
+          <li><a href="https://www.abdn.ac.uk/">University of Aberdeen</a></li>
+          <li><a href="https://www.ashscotland.org.uk/">ASH Scotland</a></li>
+          <li><a href="https://www.nhsgrampian.org/">NHS Grampian</a></li>
+          <li><a href="https://www.turningpointscotland.com/">Turning Point Scotland</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <p>Participatory research on smoking in deprived communities within the cost-of-living crisis. Organised by the University of Aberdeen with ASH Scotland, NHS Grampian and Turning Point Scotland. Funded by ASH Scotland, the British Heart Foundation and Cancer Research UK.</p>
+      <p>School Ethics Review Board reference (SERB) 652990 &nbsp;&middot;&nbsp; &copy; University of Aberdeen &nbsp;&middot;&nbsp; <a href="https://doi.org/10.1111/spol.13082">doi:10.1111/spol.13082</a></p>
     </div>
   </div>
 </footer>

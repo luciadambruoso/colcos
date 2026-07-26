@@ -77,6 +77,16 @@ Marked in the HTML with `class="todo"` and visible on the page.
 - Home page rewritten. The community quotation leads; the four "Our Mission"
   blocks and the Wix platform copy are cut. That material still lives on About
   and Resources. Restore from git history if it is wanted back.
+- Home page is illustrated throughout: workshop photograph, problem tree, three
+  photovoice plates, three campaign images from the roadshow deck.
+- Footer rebuilt as auto-fit link columns with a colophon rule, matching the
+  Woodhead and VAPAR sites.
+- Wordmark is text only; the logo mark is removed.
+- Components of the approach: light ground, a drawn mark per component, and
+  "what it does" / "what it costs" split into separate blocks.
+- Resources order: components, publication, reports and briefs, Recovery Stories.
+- A print stylesheet is included. Printing gives black text on white, drops the
+  navigation, footer and buttons, keeps images and expands external link URLs.
 
 ## Page banners
 
@@ -88,5 +98,9 @@ staying in the site's colour. Built by `banner()` in the build script; sources i
 ## Substituted images
 
 
-The Liverpool Hope 2024 story reuses the 2023 Liverpool photograph. A picture
-from the October 2024 summit would be better.
+The Liverpool Hope 2024 story uses a designed tile, since there is no photograph
+from the October 2024 summit. `Liverpool.jpg` stays with the June 2023 story.
+
+The Recovery Stories panel is a designed tile. The photograph on the University
+page ('Medication, Recovery and Me', Westhill, December 2022, credit Di Mitchell)
+could not be downloaded and should replace it.
