@@ -491,3 +491,91 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.08; }
 
 .component__mark { width: 56px; height: 56px; }
 .component__head { align-items: center; }
+
+/* ==========================================================================
+   TWO-COLOUR DISCIPLINE
+   Coral retired. Cobalt carries every small accent; acid yellow carries every
+   block, bar and hover. Nothing else.
+   ========================================================================== */
+
+:root { --accent: #26397F; }
+
+.rule { background: var(--accent); }
+.section--deep .rule, .section--cobalt .rule { background: var(--acid); }
+.section--acid .rule { background: var(--deep); }
+
+a { color: var(--accent); }
+a:hover { color: var(--deep); }
+
+.stamp, .ev__quote, .component__no, .story__date, .team__role,
+.trio figcaption, .zoom figcaption, .split figcaption, .episodes .no,
+.quote cite, .provenance { color: var(--accent); }
+.section--deep .stamp, .section--cobalt .stamp, .pagehead .stamp,
+.section--deep .quote cite, .section--cobalt .quote cite,
+.section--deep .provenance, .section--cobalt .provenance,
+.section--deep .trio figcaption, .section--cobalt .trio figcaption,
+.section--deep .split figcaption, .section--cobalt .split figcaption { color: var(--acid); }
+
+.provenance { border-left-color: var(--accent); }
+.section--deep .provenance, .section--cobalt .provenance, .hero .provenance { border-left-color: var(--acid); }
+
+.prose ul li::before, .article ul li::before { background: var(--accent); }
+.section--deep .prose ul li::before { background: var(--acid); }
+
+.agenda__no { color: var(--accent); }
+.section--deep .agenda__no, .section--cobalt .agenda__no { color: var(--acid); }
+
+.gap__fill { background: var(--accent); }
+.gap__fill--strong { background: var(--white); }
+.gap__item--equal .gap__fill { background: var(--acid); }
+.section--deep .gap__fill { background: var(--mesh); }
+
+.component__does { background: #E5EAFA; }
+.component__costs { background: #FDF3D2; }
+.component__does b { color: var(--accent); }
+.component__costs b { color: #7A4708; }
+
+.logos a:hover { border-color: var(--accent); }
+.todo { border-color: var(--accent); background: #EDF0FA; color: #24305C; }
+.todo strong { color: var(--accent); }
+.section--deep .todo { border-color: var(--acid); background: rgba(245,224,61,.10); color: #FBF3C0; }
+.section--deep .todo strong { color: var(--acid); }
+
+/* buttons: the yellow block always takes deep-blue type, wherever it sits */
+a.btn, .section--deep a.btn, .section--cobalt a.btn, .hero a.btn { color: var(--deep); }
+a.btn:hover, .section--deep a.btn:hover, .section--cobalt a.btn:hover, .hero a.btn:hover { color: var(--acid); background: transparent; }
+.section--acid a.btn { color: var(--acid); background: var(--deep); }
+.section--acid a.btn:hover { color: var(--deep); background: transparent; }
+a.btn--ghost, .section--deep a.btn--ghost, .hero a.btn--ghost { color: var(--white); }
+a.btn--ghost:hover { color: var(--deep); }
+.section--light a.btn--ghost, .section--tint a.btn--ghost, .section--mid a.btn--ghost { color: var(--ink); border-color: var(--ink); }
+.section--light a.btn--ghost:hover, .section--tint a.btn--ghost:hover, .section--mid a.btn--ghost:hover { background: var(--ink); color: var(--paper); }
+
+/* hover offsets: yellow on light, yellow on dark too */
+.ev:hover, .component:hover, .agenda__item:hover, .plate:hover,
+.publication:hover, .podcast:hover, .feature:hover, .story:hover,
+.section--deep .ev:hover, .section--deep .component:hover,
+.section--deep .agenda__item:hover, .section--deep .publication:hover,
+.section--deep .podcast:hover, .section--cobalt .agenda__item:hover { box-shadow: 8px 8px 0 var(--acid); }
+.logos a:hover, .section--deep .logos a:hover, .section--cobalt .logos a:hover { box-shadow: 8px 8px 0 var(--acid); }
+.team figure:hover img { box-shadow: 6px 6px 0 var(--acid); }
+
+/* download cards need the same lift as everything else */
+.col--card {
+  background: var(--white); border: 3px solid var(--ink); padding: 1.6rem 1.5rem 1.75rem;
+  display: flex; flex-direction: column; margin: 0;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.col--card:hover { transform: translate(-4px,-4px); box-shadow: 8px 8px 0 var(--acid); }
+.col--card h3 { margin-bottom: .7rem; }
+.col--card p { flex: 1; }
+.col--card a.more-link { align-self: flex-start; }
+@media (hover: none) { .col--card:hover { transform: none; box-shadow: none; } }
+
+/* bigger, bolder component marks */
+.component__mark { width: 72px; height: 72px; }
+.component__head { gap: 1.15rem; }
+.component h3 { font-size: 1.4rem; }
+
+/* funders sit under partners, at a quieter size */
+.logos--funders a { width: clamp(150px, 16vw, 185px); border-width: 3px; }
